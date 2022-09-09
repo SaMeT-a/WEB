@@ -1,5 +1,5 @@
 //Poweredbysamet
-console.log("Site Samet Ali Yalçın Tarafından 09/09/22 14.05 Tarihinde Yapılmıştır Hakları Saklıdır")
+console.log("Site Samet Ali Yalçın Tarafından 09/09/22 14.05 Tarihinde Yapılmıştır Hakları Saklıdır");
 window.onload = startTime;
 function startTime()
 {
