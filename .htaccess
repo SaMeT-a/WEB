@@ -1,0 +1,4 @@
+Options +FollowSymLinks
+RewriteEngine on
+RewriteCond %{HTTP_HOST} ^sametali.tk$ [NC]
+RewriteRule (.*) http://www.sametali.tk/$1 [L,R=301]
