@@ -1,4 +1,3 @@
-console.log("Bu Site Samet Ali Tarafından 10/9/22 Tarihinde Yapılmıştır Tüm Hakları Saklıdır");
 //Poweredbysamet
 window.onload = startTime;
 function startTime()
