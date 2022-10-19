@@ -218,3 +218,12 @@ button30.onclick = function click() {
 document.getElementById("isim9").innerHTML= "<strike>"+ isim +"</strike> ✖";
 };  
 };
+
+//not kısım
+const button31 = document.getElementById('button import1');
+
+
+button31.onclick = function click() {
+var not = prompt("not bekleniyor","");
+document.getElementById('not1').innerHTML = not ;
+};
