@@ -1,0 +1,1 @@
+console.info('%c Hey Dostum Burası Geliştiriciler İçin Dikkat Et! ', '@import url(https://fonts.googleapis.com/css?family=Montserrat:700);   color: #0088cc;  border:1; font-size:50px; font-family:Montserrat , sans-serif;  font-weight: bold;');
