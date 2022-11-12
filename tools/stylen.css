@@ -1,4 +1,5 @@
-@import url(https://fonts.googleapis.com/css?family=Montserrat:700);
+@import url('https://fonts.googleapis.com/css?family=Montserrat:700');
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;800&display=swap');
 /* Header */
 .large-header {
   position: relative;
@@ -14,22 +15,23 @@
 }
 .main-title {
   position: absolute;
-  margin: 0;
-  padding: 0;
   color: #f9f1e9;
   text-align: center;
-  top: 50%;
-  left: 50%;
+  top: 7%;
+  left: 90%;
   -webkit-transform: translate3d(-50%, -50%, 0);
   transform: translate3d(-50%, -50%, 0);
 }
+
+.main-title .saat{
+  font-family:"Orbitron";
+  font-size: xx-large;
+}
+
 .demo-1 .main-title {
   text-transform: uppercase;
   font-size: 4.2em;
   letter-spacing: 0.1em;
-}
-.main-title .thin {
-  font-weight: 200;
 }
 @media only screen and (max-width: 768px) {
   .demo-1 .main-title {
@@ -51,4 +53,8 @@ h3 {
   text-transform: uppercase;
   text-shadow: hsla(0, 45%, 5%, .3) 0 0 1px, hsla(360, 55%, 95%, .3) 0 -1px 2px,  hsla(0, 45%, 5%, .3) 0 -1px 2px, hsla(360, 55%, 95%, .3) 0 20px 15px;        
   padding-left: 20px;
+  -webkit-transform: translate3d(-50%, -50%, 0);
+  transform: translate3d(-50%, -50%, 0);
+  left: 50%;
 }
+
