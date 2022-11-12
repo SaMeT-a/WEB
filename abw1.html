@@ -2,26 +2,60 @@
 <html lang="en" >
 <head>
   <meta charset="UTF-8">
+  <link rel="icon" href="favicon.png" type="image/x-icon">  
   <title>Samet Ali YALÇIN | Animation Walpaper</title>
   <link href='https://fonts.googleapis.com/css?family=Raleway:200,400,800' rel='stylesheet' type='text/css'><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
-<link rel='stylesheet' href='https://www.marcoguglie.it/Codepen/AnimatedHeaderBg/demo-1/css/demo.css'><link rel="stylesheet" href="tools/stylen.css">
+<link rel='stylesheet' href='https://www.marcoguglie.it/Codepen/AnimatedHeaderBg/demo-1/css/demo.css'><link rel="stylesheet" href="stylen.css">
 <link rel="stylesheet" href="tools/sagtikmenu.css" type="text/css"/>
+<link rel="stylesheet" href="tools/searchbar.css" type="text/css"/>
 </head>
 <body>
 <div id="large-header" class="large-header">
   <canvas id="demo-canvas"></canvas>
-    <h1 class="main-title"><span class="thin"></span></h1>
+    <h1 class="main-title"><span class="thin"> <p id="saat" class="saat"></p></span></h1>
     <h3 class = 'text_fade '>Samet Ali YALÇIN</h3>
-</div>
-  <ul class="custom-menu">
-    <a  href="https://www.instagram.com/sametyln1/" target="_blank"><li data-action="first">Samet Ali YALÇIN</li></a>
+</div>  
+<ul class="custom-menu">
+  <a  href="https://www.instagram.com/sametyln1/" target="_blank"><li data-action="first">Samet Ali YALÇIN</li></a>
+  <a id="search"><li data-action="first">Müzik</li></a>
 </ul>
-  <script src='https://www.marcoguglie.it/Codepen/AnimatedHeaderBg/demo-1/js/EasePack.min.js'></script>
+
+
+
+
+<!--Search-->
+<div class="searchyt" id="searchyt" style="display:none ;"><div class="topnav">
+  <a class="active"><img>></a>
+  <a class="active"><img>Geliştirilme Aşamsındadır!!</a>
+  <div class="search-container">
+    <form action="https://www.youtube.com" target="_blank">
+      <input type="text" placeholder="Müzik Arayın...." name="search">
+      <button type="submit">Ara</button>
+    </form>
+  </div>
+</div>
+</div>
+ 
+<script>
+  const button = document.getElementById('search');
+
+  button.onclick = function click() {var x = document.getElementById("searchyt");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+    document.getElementById("searchyt").hide(100); 
+  }};
+</script>
+
+
+<script src='https://www.marcoguglie.it/Codepen/AnimatedHeaderBg/demo-1/js/EasePack.min.js'></script>
 <script src='https://www.marcoguglie.it/Codepen/AnimatedHeaderBg/demo-1/js/rAF.js'></script>
-<script src='https://www.marcoguglie.it/Codepen/AnimatedHeaderBg/demo-1/js/TweenLite.min.js'></script><script  src="tools/script.js"></script>
-  <script type="text/javascript" src="http://code.jquery.com/jquery-1.8.3.js"></script>
+<script src='https://www.marcoguglie.it/Codepen/AnimatedHeaderBg/demo-1/js/TweenLite.min.js'></script>
+<script  type="text/javascript" src="tools/script.js"></script>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.8.3.js"></script>
 <script type="text/javascript" src="http://code.jquery.com/ui/1.9.2/jquery-ui.js"></script>
 <script type="text/javascript" src="tools/sagtıkmenu.js"></script>
- <script src="tools/console.js" type="text/javascript"></script>
+<script type="text/javascript" src="tools/saat.js"></script>
 </body>
 </html>
